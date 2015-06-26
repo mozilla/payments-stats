@@ -1,7 +1,8 @@
 # heka_base image
 FROM golang:1.4
 
-MAINTAINER Chance Zibolski <chance.zibolski@gmail.com> (@chance)
+MAINTAINER Andy McKay <andym@mozilla.com>
+# Based on the file in Heka by Chance Zibolski <chance.zibolski@gmail.com> (@chance)
 
 RUN     apt-get update && \
         apt-get install -yq --no-install-recommends \
