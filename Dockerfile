@@ -29,9 +29,9 @@ ENV PATH        $PATH:$GOBIN
 EXPOSE 4352
 
 WORKDIR /
-RUN git clone git@github.com:mozilla-services/heka.git
+RUN git clone https://github.com/mozilla-services/heka.git
 RUN cd heka && ./build.sh
-RUN cd build && make install
+RUN cd /heka/build && make install
 RUN mkdir -p /usr/share/heka && cp -r /heka/build/heka/share/heka/* /usr/share/heka
 COPY heka.conf /etc/hekad.toml
 
