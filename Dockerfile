@@ -27,8 +27,6 @@ ENV GOPATH      $BUILD_DIR/heka
 ENV GOBIN       $GOPATH/bin
 ENV PATH        $PATH:$GOBIN
 
-EXPOSE 4352
-
 WORKDIR /
 RUN git clone https://github.com/mozilla-services/heka.git
 RUN cd heka && ./build.sh
@@ -41,5 +39,4 @@ RUN mkdir -p /srv/logs
 VOLUME /var/log/nginx/
 VOLUME /var/log/solitude/
 
-EXPOSE 4352
 ENTRYPOINT ["hekad"]
