@@ -1,0 +1,4 @@
+stats:
+  build: .
+  ports:
+    - '4352:4352'
