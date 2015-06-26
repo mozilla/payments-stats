@@ -1,4 +1,4 @@
 stats:
-  build: mozillapayments/payments-stats
+  image: mozillapayments/payments-stats
   ports:
     - '4352:4352'
