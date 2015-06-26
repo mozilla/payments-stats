@@ -1,8 +1,9 @@
-Heka stats and graphs for docker. In development, might not work.
+Heka stats and graphs for docker. In development, might not work. Requires: git,
+docker and a working payments environment.
 
 ```
-git clone github.com/mozilla/payments-stats
+git clone https://github.com/mozilla/payments-stats.git
 docker-compose up
 ```
 
-Visit: http://pay.dev:4352
+Then visit: http://pay.dev:4352
